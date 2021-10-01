@@ -1,0 +1,25 @@
+Question10:/*.Write a program to find the sum and product of all elements of an array?*/
+
+Ans: 
+
+public class Qn10
+{
+         public static void main(String args[]) 
+         {
+         int a[]=new int[]{2,4,6,8,1};
+			int sum = 0, prod = 1;
+         System.out.println("Enter the array elements: ");
+         for (int i = 0; i <a.length; i++)
+         {
+             System.out.println(a[i] + "\t");
+             System.out.println("");
+         }
+         for (int i = 0; i < a.length; i++)
+         {
+             sum = sum + a[i];
+             prod = prod * a[i];
+         }
+         System.out.println("Sum of array elements is: "+sum);
+         System.out.println("Product of array elements is: "+prod);
+     }
+ }

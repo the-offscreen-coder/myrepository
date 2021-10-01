@@ -1,0 +1,28 @@
+Question1:/*.Find the minimum and maximum element in an array?*/
+
+Ans:
+
+public class Qn1 
+{ 
+    static int getMin(int a[], int n)
+    {
+        int result = a[0];
+        for (int i = 1; i < n; i++)
+        result = Math.min(result, a[i]);
+        return result;
+    } 
+    static int getMax(int a[], int n)
+    {
+        int result = a[0];
+        for (int i = 1; i < n; i++)
+        result = Math.max(result, a[i]);
+        return result;
+    }
+    public static void main (String[] args)
+    {
+        int a[] = { 2,24,3,7,5 };
+        int n = a.length;
+        System.out.println( "Minimum element"+ " of array: " + getMin(a, n));
+        System.out.println( "Maximum element" + " of array: " + getMax(a, n));
+    }
+}

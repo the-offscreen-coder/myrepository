@@ -1,0 +1,23 @@
+Question4:/*.Find the occurance of an integer in the array[5,8,5,7,4,5]?*/
+
+Ans:
+
+public class Qn4 
+{
+	static int countOccurrences(int arr[], int n, int x)
+    {
+        int res = 0;
+        for (int i=0; i<n; i++)
+            if (x == arr[i])
+              res++;
+        return res;
+    }
+
+    public static void main(String args[])
+    {
+        int arr[] = {5,8,5,7,4,5 };
+        int n = arr.length;
+        int x = 5;
+        System.out.println(countOccurrences(arr, n, x));
+    }
+}
