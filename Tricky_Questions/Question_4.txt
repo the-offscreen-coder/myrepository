@@ -1,0 +1,61 @@
+
+Question4:/*  Take 10 integer inputs from user and store them in an array.Now,copy all the elements in an another array but in Reverse order?  */
+
+Program:
+
+
+package String;
+
+import java.util.Scanner;
+
+public class ArrayEx4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the integers: ");
+           int n=sc.nextInt();
+           
+           if(n!=0 && n>0) {
+        	   int arr[]=new int[n];
+           System.out.println("Enter the elements:");
+           
+           for(int i=0;i<arr.length;i++) {
+        	arr[i]=sc.nextInt();
+           }
+        System.out.println(" The Given integers are:");
+        
+        for(int i=0;i<arr.length;i++) {
+        	int a=arr[i];
+        	
+        System.out.print(a+"\t");
+        	 }
+        System.out.println("Array of given integers in reverse:");
+    }
+           int arr2[i]=new int[arr.length]; 
+           
+           for(int i=0;i<arr.length;i++)
+           {
+        	   arr2[i]=arr[arr.length-i-1];
+        	   int b=arr2[i];
+        	   System.out.println(b+"\t");
+           }
+	}
+}
+          else
+    {
+    	System.out.println("Enter valid integer");
+    }
+           }
+           sc.close();
+	}
+    	
+    	
+    	
+    	
+    }
+    }
+
+	}
+
+}

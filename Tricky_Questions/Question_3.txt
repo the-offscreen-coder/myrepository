@@ -1,0 +1,73 @@
+
+Question3:/*  Take 20 integer inputs from user and store them in an array and print the following..
+                -Number of Even Numbers
+                -Number of Odd Numbers
+                -Number of Positive Numbers
+                -Number of Negative Numbers
+                -Number of Zero's
+*/
+
+
+Program:
+
+package String;
+
+import java.util.Scanner;
+
+public class ArrayEx3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the elements:");
+		int n=sc.nextInt();
+		if(n!=0 && n>0) {
+			int array[]=new int[n];
+			System.out.println("Enter any integer:"+n);
+			for(int i=0;i<array.length;i++) {
+				array[i]=sc.nextInt();
+				int a=array[i];
+				System.out.println(a+"\t");
+			}
+		}
+		int PosNum=0;
+		int NegNum=0;
+		int OddNum=0;
+		int EvenNum=0;
+		int ZeroNum=0;
+		
+		for(int i=0;i<array.length;i++) {
+			
+			if(array[i]>0) {
+				PosNum++;
+			}
+			else if(array[i]<0) {
+				NegNum++;
+			}
+			else if(array[i]==0){
+				ZeroNum++;
+			}
+		}
+			for(int i=0;i<array.length;i++) {
+				
+			if(array[i]%2==0 && array[i]>=0) {
+				EvenNum++;
+			}
+			else if(array[i]%2!=0 && array[i]>0){
+				OddNum++;
+			}
+		}
+		System.out.println("Positive Number is:"+PosNum);
+		System.out.println("Negative Number is:"+NegNum);
+		System.out.println("Even Number is:"+EvenNum);
+		System.out.println("Odd Number is:"+OddNum);
+		System.out.println("Zero Number is:"+ZeroNum);
+		
+			}
+        else
+          {
+	System.out.println("Enter valid array");
+
+	}
+}
+

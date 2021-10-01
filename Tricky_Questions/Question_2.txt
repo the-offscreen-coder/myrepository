@@ -1,0 +1,49 @@
+
+Question 2: /* Take 10 integer inputs from user and store them in an array.Again ask user to enter a number and now tell user to check whether that number is present in an array or not..*/
+
+Program:
+
+package String;
+import java.util.Scanner;
+
+public class ArrayEx2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n,flag=0,num;
+		Scanner sc=new Scanner(System.in);
+	     System.out.println("Enter the elements:");
+	           n=sc.nextInt();
+	        int a[]=new int[10];
+	        if(n!=0 && n>0) {
+		System.out.println("Enter the integers:");
+		for(int i=0;i<10;i++){
+			{
+				a[i]=sc.nextInt();
+			}
+			System.out.println("Array elements are:");
+			for(i=0;i<10;i++){
+				System.out.println(a[i]+"");
+			}
+				System.out.println("Enter the number");
+				num=sc.nextInt();
+				for(i=0;i<10;i++){
+					if(a[i]==num) {
+						System.out.println("Element "+num+"  present at "+i+" position");
+						flag=1;
+						break;
+					}
+				}
+			if(flag==0) {
+				System.out.println("Element "+num+" not present");
+			}
+			
+		else {
+			System.out.println("Enter valid array");
+		}
+		}
+
+	}
+}
+}
+

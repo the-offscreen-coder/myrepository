@@ -1,0 +1,41 @@
+
+Question1:   /* Take 10 integer inputs from user and store them in an array and print them on screen..*/
+
+Program:
+
+package String;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class ArrayEx1 {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the integers: ");
+           int n=sc.nextInt();
+           int arr[]=new int[10];
+           
+           if(n!=0 && n>0) {
+           System.out.println("Enter the elements:");
+           for(int i=0;i<n;i++) {
+        	arr[i]=sc.nextInt();
+           }
+        System.out.println(" The Given integers are:");
+        
+        for(int i=0;i<n;i++) {
+        System.out.print(" " +arr[i]);
+        	 }
+    }
+          else
+    {
+    	System.out.println("Enter valid integer");
+    }
+    }
+}
+ 
+         
+        
+
+        
+    
+
